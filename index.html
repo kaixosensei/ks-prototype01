@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Twitter Bootstrap 3 Responsive Layout Example</title>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Kaixo Sensei Prototipo Version 0.1</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="css/cards-stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="css/custom-stylesheet.css">
+     <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -19,67 +22,275 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Tutorial Republic</a>
+            <a class="navbar-brand" href="#">Kaixo Sensei</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="http://www.tutorialrepublic.com" target="_blank">Home</a></li>
-                <li><a href="http://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>
-                <li><a href="http://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>
+                <li class="active"><a href="#" target="_blank">Principal</a></li>
+                <li><a href="#" target="_blank">Grabar</a></li>
+                <li><a href="#" target="_blank">Cartas</a></li>
+                <li><a href="#" target="_blank">Mis Contenidos</a></li>
+                <li><a href="#" target="_blank">Contacto</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
             </ul>
         </div>
+        
     </div>
 </nav>
 <div class="container">
+	
     <div class="jumbotron">
-        <h1>Learn to Create Websites</h1>
-        <p>In today's world internet is the most popular way of connecting with the people. At <a href="http://www.tutorialrepublic.com" target="_blank">tutorialrepublic.com</a> you will learn the essential of web development technologies along with real life practice example, so that you can create your own website to connect with the people around the world.</p>
-        <p><a href="http://www.tutorialrepublic.com" target="_blank" class="btn btn-success btn-large">Get started today</a></p>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>HTML</h2>
-            <p>HTML is a markup language that is used for creating web pages. The HTML tutorial section will help you understand the basics of HTML, so that you can create your own web pages or website.</p>
-            <p><a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success btn-medium">Learn More È</a></p>
+        <div class = "container">
+                <div class="col-sm-3 col-md-2 col-lg-2">     
+                    <img src="http://placehold.it/125x125" class="img-rounded" alt="Rounded Image">
+                </div>
+                <div class="col-sm-9 col-md-10 col-lg-4">  
+                    <h2>Paul Ricketts <small>de la familia Cheng-Ricketts</small></h2>
+                    <p>Donostia, Euskadi</p>
+                 </div>
+            
+        		<div class="col-sm-12 col-md-12 col-lg-6">  
+                    <h1>Construye su legado jugando</h1>
+                    <p>Aprovechando espacios y actividades de ocio para grabar narrativa de los 65+ </p>
+                    <p><a href="#" class="btn btn-success btn-large">Ver apresetaciÃ³n</a></p>
+                </div>
+            
+       </div><!--END  CONTAINER-->
+    </div><!--END  JUMBOTRON-->
+
+    <script>//START CARDS SCRIPT
+        var emocionesArray = new Array( "alegrï¿½a", "tristeza", "amor", "odio", "joker" );
+        var trabajoArray = new Array( "su formaciï¿½n profesional", "su carrera professional", "su sueldo", "su mejor jefe", "su peor jefe" );
+        var famliaArray = new Array( "su  padre", "su madre", "sus hermanos", "sus primos", "sus nietos", "sus suegros");
+        var deportesArray = new Array( "futbol", "deportes que juega/jugï¿½", "deportes que le gustan", "deportes del colegio" );
+        var historiaArray = new Array( "el mundo cuando nasciï¿½", "1978", "1994", "como el mundo ha cambiado" );
+        var lugaresArray = new Array( "donde nasciï¿½", "donde cresciï¿½", "su colegio", "sus casas", "su paï¿½s" );	
+        
+        
+        window.onload = function (){
+                $( "#volver" ).hide();
+                $( "#set1" ).hide();
+                $( "#set2" ).hide();
+                $( "#set3" ).hide();
+                $( "#set4" ).hide();
+                $( "#set5" ).hide();
+                $( "#set6" ).hide();
+                $('.card').click(function() {
+                        $( "#volver" ).show();
+                        $("#strapline").text("Hable de una carta"); 
+                        $( "#categories-menu" ).hide();
+                        
+                        var currentCategory = $(this).text(); 
+                        switch (currentCategory)
+                        {
+                        case "Emociones":
+                                $( "#set1").show(); 
+                                break;
+                        case "Trabajo":
+                                $( "#set2").show();  
+                                break;
+                        case "Familia":
+                        $( "#set3").show(); 
+                                break;
+                        case "Ocio":
+                                $( "#set4").show(); 
+                                break;
+                        case "Historia":
+                        $( "#set5").show();  
+                                break;
+                        case "Lugares":
+                                $( "#set6").show();  
+                                break;       
+                        } 
+            });
+        }//END ONLOAD
+        function backHome()
+        { 
+                $( "#categories-menu" ).show();
+                $( "#set1" ).hide();
+                $( "#set2" ).hide();
+                $( "#set3" ).hide();
+                $( "#set4" ).hide();
+                $( "#set5" ).hide();
+                $( "#set6" ).hide();
+                $("#strapline").text("Elije una carta"); 
+                $( "#volver" ).hide();
+        }
+    </script><!--END CARDS SCRIPT-->
+    
+    <div class="row"><!--START ROW CARDS-->
+        <div class="col-sm-12 col-md-12 col-lg-12">   <!--START COLS CARDS-->
+            <H1>Cartas</H1>
+            <div id = "card-set">
+               <div id = "volver" onclick="backHome()">
+                                
+                         <a href="#" class="myButton">Volver</a>
+                </div>
+                   
+                <div ID = "categories-menu">
+                        
+                     <div class = "card" ID = "cat1">Emociones</div>
+                     <div class = "card" ID = "cat2">Trabajo</div>
+                     <div class = "card" ID = "cat3">Familia</div>
+                     <div class = "card" ID = "cat4">Ocio</div>
+                     <div class = "card" ID = "cat5">Historia</div>
+                     <div class = "card" ID = "cat6">Lugares</div>
+                </div> 
+                <div ID = "set1">     
+                     <div class = "card1"><div class="card-category-header">Emociones</div>Alegria</div>
+                     <div class = "card1"><div class="card-category-header">Emociones</div>Tristeza</div>
+                     <div class = "card1"><div class="card-category-header">Emociones</div>Amor</div>
+                     <div class = "card1"><div class="card-category-header">Emociones</div>Celos</div>
+                     <div class = "card1"><div class="card-category-header">Emociones</div>Ilusiï¿½n</div>
+                     <div class = "card1"><div class="card-category-header">Emociones</div>Fï¿½</div>
+                </div>
+                 <div ID = "set2">     
+                     <div class = "card2"><div class="card-category-header">Trobajo</div>Su formaciï¿½n profesional</div>
+                     <div class = "card2"><div class="card-category-header">Trobajo</div>Su carrera professional</div>
+                     <div class = "card2"><div class="card-category-header">Trobajo</div>Su primer empleo</div>
+                     <div class = "card2"><div class="card-category-header">Trobajo</div>Su peor sueldo</div>
+                     <div class = "card2"><div class="card-category-header">Trobajo</div>Su mejor jefe</div>
+                     <div class = "card2"><div class="card-category-header">Trobajo</div>Su peor jefe</div>
+                </div>
+                 <div ID = "set3">     
+                     <div class = "card3"><div class="card-category-header">Familia</div>Su padre</div>
+                     <div class = "card3"><div class="card-category-header">Familia</div>Su madre</div>
+                     <div class = "card3"><div class="card-category-header">Familia</div>Sus hermanos</div>
+                     <div class = "card3"><div class="card-category-header">Familia</div>Sus primos</div>
+                     <div class = "card3"><div class="card-category-header">Familia</div>Sus nietos</div>
+                     <div class = "card3"><div class="card-category-header">Familia</div>Sus suegros</div>
+                </div>
+                 <div ID = "set4">     
+                     <div class = "card4"><div class="card-category-header">Deportes</div>EL mejor deporte del mundo</div>
+                     <div class = "card4"><div class="card-category-header">Deportes</div>Deportes que jugï¿½</div>
+                     <div class = "card4"><div class="card-category-header">Deportes</div>Deportes que le gustan </div>
+                     <div class = "card4"><div class="card-category-header">Deportes</div>Deportes del colegio</div>
+                     <div class = "card4"><div class="card-category-header">Deportes</div>El deporte mas gracioso</div>
+                     <div class = "card4"><div class="card-category-header">Deportes</div>Deportes que no usted no entiende</div>
+                </div>
+        
+                 <div ID = "set5">     
+                     <div class = "card5"><div class="card-category-header">Historia</div>El mundo cuando nasciï¿½</div>
+                     <div class = "card5"><div class="card-category-header">Historia</div>1978</div>
+                     <div class = "card5"><div class="card-category-header">Historia</div>1994</div>
+                     <div class = "card5"><div class="card-category-header">Historia</div>El mejor aï¿½o de su vida</div>
+                     <div class = "card5"><div class="card-category-header">Historia</div>Los cambiados que ha visto</div>
+                     <div class = "card5"><div class="card-category-header">Historia</div>El mundo del futuro</div>
+        
+                </div>
+                
+                 <div ID = "set6">     
+                     <div class = "card6"><div class="card-category-header">Lugares</div>Donde nasciï¿½</div>
+                     <div class = "card6"><div class="card-category-header">Lugares</div>Donde cresciï¿½</div>
+                     <div class = "card6"><div class="card-category-header">Lugares</div>Su colegio</div>
+                     <div class = "card6"><div class="card-category-header">Lugares</div>Sus casas</div>
+                     <div class = "card6"><div class="card-category-header">Lugares</div>Su paï¿½s</div>
+                     <div class = "card6"><div class="card-category-header">Lugares</div>Otro paï¿½s que visitï¿½</div>
+                </div>
+            </div><!--END CARD SET-->
+        </div>  <!--END COLS-->
+    </div><!--END ROW CARDS-->
+    
+     <div class="row mis-contenidos"><!--START MIS CONTENIDOS ROW-->
+        <div class="col-md-12">
+            <H1>Mis Contenidos</H1>    
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>CSS</h2>
-            <p>CSS is used for describing the presentation of web pages. The CSS tutorial section will help you learn the essentials of CSS, so that you can fine control the style and layout of your HTML document.</p>
-            <p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success btn-medium">Learn More È</a></p>
+        	<div class="col-sm-12 col-md-6 col-lg-6">
+                 <h3>Titulo de video ipsum factum</h3>           
+            	<img src="http://placehold.it/360x220&text=video" class="img-rounded" alt="Rounded Image">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            	<p><a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success btn-medium">Ver mas...</a></p>
         </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Bootstrap</h2>
-            <p>Twitter Bootstrap is a powerful front-end framework for faster and easier web development. The Twitter Bootstrap tutorial section will help you learn the techniques of Bootstrap so that you can create web your own website with much less efforts.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success btn-medium">Learn More È</a></p>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+        		<h3>Ecce titulos foto guay</h3>
+        		<img src="http://placehold.it/360x220&text=foto" class="img-rounded" alt="Rounded Image">
+            	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success btn-medium">Ver mas...</a></p>
         </div>
-        <div class="clearfix visible-md-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>References</h2>
-            <p>The references section outlines all the standard HTML tags and CSS properties along with other useful references such as color names and values, symbols and character entities, web safe fonts, language codes, HTTP messages and much more.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success btn-medium">Learn More È</a></p>
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+		<div class="col-sm-12 col-md-6 col-lg-6">
+        		<h3>Otra foto bonita de factum non verbum</h3>
+        		<img src="http://placehold.it/360x220&text=foto" class="img-rounded" alt="Rounded Image">
+            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            	<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success btn-medium">Ver mas...</a></p>
         </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>Examples</h2>
-            <p>The examples section encloses an extensive collection of examples on various topic that you can try and test yourself using online HTML editor.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success btn-medium">Learn More È</a></p>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+        		<h3>Veni vidi vici</h3>
+        		<img src="http://placehold.it/360x220&text=audio" class="img-rounded" alt="Rounded Image">
+            	<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            	<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success btn-medium">Ver mas...</a></p>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-2">
-            <h2>FAQ</h2>
-            <p>The collection of Frequently Asked Questions (FAQ) provides brief answers to many common questions related to web design and development.</p>
-            <p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success btn-medium">Learn More È</a></p>
+        <div class="clearfix visible-lg-block visible-md-block"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+        		<h3>Veni vidi vici</h3>
+        		<img src="http://placehold.it/360x220&text=video" class="img-rounded" alt="Rounded Image">
+            	<p>Eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            	<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success btn-medium">Ver mas...</a></p>
         </div>
-    </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+        		<h3>Las cosas de mi pasado</h3>
+        		<img src="http://placehold.it/360x220&text=video" class="img-rounded" alt="Rounded Image">
+            	<p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            	<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success btn-medium">Ver mas...</a></p>
+        </div>
+     </div><!--END MIS CONTENIDOS ROW-->
+     
+    
+    <div class="row"><!--START CONTACT ROW-->
+        <div class="col-md-12">
+        <H1>Contacto</H1>    
+        </div>
+        <form role="form" action="" method="post" >
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="InputName">Su nombre</label>
+              <div class="input-group">
+                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Nombre" required>
+                <span class="input-group-addon"><i class="form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+              <label for="InputEmail">Su correo electronico</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Correo electronico" required  >
+                <span class="input-group-addon"><i class=" form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+              <label for="InputMessage">Mensaje</label>
+              <div class="input-group"
+      >
+                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Teclear mensaje aqui" required></textarea>
+                <span class="input-group-addon"><i class=" form-control-feedback"></i></span></div>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+            <!--Add alerts if form ok... success, else error. Hidden for now-->
+            <div style="display: none;" class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>	  
+          <div style="display: none;" class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>    
+          </div>
+        </form>
+        <hr class="featurette-divider hidden-lg">
+        <div class="col-lg-5 col-md-push-1">
+          <address>
+          <h3>Nuestras oficinas</h3>
+          <p class="lead"><a href="https://www.google.co.uk/maps/place/San+Sebasti%C3%A1n,+Gipuzkoa,+Spain/@43.3072927,-1.973883,13z/data=!3m1!4b1!4m2!3m1!1s0xd51affe3b68fe15:0xe43ec55994864649">Nuestra direccion<br>
+            Donostia<br>
+            Gipuzkoa<br>
+            Euskadi</a><br>
+            Tel: XXX-XXX-XXXX<br>
+          </address>
+        </div>
+    </div><!--end contact form-->
+    
     <hr>
     <div class="row">
         <div class="col-sm-12">
             <footer>
-                <p>© Copyright 2013 Tutorial Republic</p>
+                <p>ï¿½ Copyright 2014 Kaixo Sensei</p>
             </footer>
         </div>
     </div>
-</div>
+</div> <!--end container-->
 </body>
 </html>                                		
