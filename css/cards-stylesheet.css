@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: 'Crimson Text', serif;
+	background-image:url('../images/tablecloth.jpg');
+	}
+
+#top-menu{
+	position:relative;
+	background-color:#FFF;
+	max-width:680px;
+	min-width:300px; 
+	border-radius:8px;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:20px;
+}
+#strapline{
+	float: right;
+	font-size:24px;
+	padding-right:20px;
+	padding-top:20px;
+	color:#900;
+}
+
+
+
+#card-set{
+	position:relative;
+	max-width:800px;
+	min.width:300px;
+	margin-left:auto;
+	margin-right:auto;
+}	
+	
+.card{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	background-image:url('../images/dandelion.png');
+	background-repeat:no-repeat;
+	height:270px;
+	position:relative;
+	float: left;
+	font-size:30px;
+	color:#FFF;
+	text-align: center;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:140px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}
+#cat1{
+	background-color:#dc2c2c;
+	}
+#cat2{
+	background-color:#7c242c;
+	}	
+	
+#cat3{
+	background-color:#ed8f29;
+	}
+#cat4{
+	background-color:#f4cc34;
+}	
+#cat5{
+	background-color:#85a687;
+}
+#cat6{
+	background-color:#4e95bf;
+}	
+	
+.card-category-header{
+	font-size:1em;
+	color:#CCC;
+	font-size:20px;
+	padding-bottom:60px
+	}
+.card1{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	height:270px;
+	float: left;
+	background-image:url('../images/carta-tema-1.png');
+	font-size:30px;
+	color:#dc2c2c;
+	text-align: center;
+	border-style:solid;
+	border-width:thick;
+	border-color:#dc2c2c;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:20px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}
+	
+.card2{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	height:270px;
+	float: left;
+	background-image:url('../images/carta-tema-2.png');
+	font-size:30px;
+	color:#7c242c;
+	text-align: center;
+	border-style:solid;
+	border-width:thick;
+	border-color:#7c242c;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:20px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}
+
+.card3{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	height:270px;
+	float: left;
+	background-image:url('../images/carta-tema-3.png');
+	font-size:30px;
+	color:#ed8f29;
+	text-align: center;
+	border-style:solid;
+	border-width:thick;
+	border-color:#ed8f29;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:20px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}
+.card4{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	height:270px;
+	float: left;
+	background-image:url('../images/carta-tema-4.png');
+	font-size:30px;
+	color:#f4cc34;
+	text-align: center;
+	border-style:solid;
+	border-width:thick;
+	border-color:#f4cc34;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:20px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}.card5{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	height:270px;
+	float: left;
+	background-image:url('../images/carta-tema-5.png');
+	font-size:30px;
+	color:#85a687;
+	text-align: center;
+	border-style:solid;
+	border-width:thick;
+	border-color:#85a687;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:20px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}.card6{
+	font-family: 'Crimson Text', serif;
+	width:205px;
+	height:270px;
+	float: left;
+	background-image:url('../images/carta-tema-6.png');
+	font-size:30px;
+	color:#4e95bf;
+	text-align: center;
+	border-style:solid;
+	border-width:thick;
+	border-color:#4e95bf;
+	border-radius:12px;
+	background-color:#FFF;
+	margin:10px;
+	padding-top:20px;
+	-webkit-box-shadow: 6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:    6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:         6px 6px 11px 0px rgba(50, 50, 50, 0.64);
+}
+
+.volver{
+	margin:40px;
+	font-size:1.6em;
+	
+	}
+
+#card-set{
+	width:80%;
+	height:515px;
+	margin-left:auto;
+	margin-right:auto;
+
+	
+}
+#rubric{
+	color:#930;
+	float:!important;
+}
+
+.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:8px 21px;
+	text-decoration:none;
+	text-shadow:2px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
