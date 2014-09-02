@@ -10,7 +10,7 @@ h1{
 color:#511281;	
 }	
 
-.mis-contenidos{
+.section-box{
 	background-color:rgba(255,255,255,0.8);
 	border-radius:6px;
 	margin-top:20px;
@@ -39,5 +39,12 @@ font-size: 18px;
 
 
 	
+	
+}
+
+
+#mc-embedded-subscribe{
+	margin-top: 10px;
+	margin-bottom: 20px;
 	
 }
